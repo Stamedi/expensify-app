@@ -6,7 +6,9 @@ module.exports = (env, argv) => {
 return {  entry: './src/app.js',
   output: {
     path: path.join(__dirname, 'public'),
+    publicPath: '/dist/',
     filename: 'bundle.js',
+    
   },
   module: {
     rules: [
@@ -45,7 +47,7 @@ return {  entry: './src/app.js',
         filename: 'styles.css'
     })
 ],
-  devtool: isProduction ? 'source-map' : 'inline-cheap-module-source-map, ',
+  devtool: isProduction ? 'source-map' : 'inline-cheap-module-source-map',
   devServer: {
     static: path.join(__dirname, 'public'),
     historyApiFallback: true,

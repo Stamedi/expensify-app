@@ -5,14 +5,13 @@
   "author": "Mario Arro",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:prod": "webpack --mode production",
     "dev-server": "webpack serve --mode development",
     "test": "jest --config=jest.config.json",
-    "start":"node server/server.js",
-    "heroku-postbuild":"yarn run build:prod"
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "19": "^0.0.0",
@@ -24,12 +23,7 @@
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "enzyme-to-json": "^3.6.2",
     "express": "^4.17.1",
-    "jest": "^27.3.1",
-    "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^2.4.5",
     "moment": "^2.29.1",
     "node": "^17.1.0",
@@ -42,17 +36,22 @@
     "react-modal": "3.12.1",
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.3.0",
-    "react-test-renderer": "^17.0.2",
     "redux": "^4.1.2",
     "sass-loader": "^12.3.0",
     "style-loader": "^3.3.1",
     "uuid": "^8.3.2",
     "validator": "^13.7.0",
-    "webpack": "^5.64.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "4.0.0"
+    "webpack": "^5.25.0",
+    "webpack-cli": "^4.9.1"
   },
   "devDependencies": {
-    "babel-jest": "^27.3.1"
+    "babel-jest": "^27.3.1",
+    "chalk": "^5.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
+    "jest": "^27.3.1",
+    "react-test-renderer": "^17.0.2",
+    "webpack-dev-server": "4.0.0"
   }
 }
