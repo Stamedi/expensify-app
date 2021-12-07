@@ -12,7 +12,9 @@ if (process.env.NODE_ENV === 'test') {
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production'
-return {  entry: './src/app.js',
+return {  
+  entry: './src/app.js',
+  target: ['web', 'es5'],	
   output: {
     path: path.join(__dirname, 'public', 'dist'),
     publicPath: '/dist/',
