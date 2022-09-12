@@ -1,5 +1,5 @@
 LINK TO THE WEBSITE
-https://react-course-expensify-mario.herokuapp.com/dashboard
+https://dashboard.heroku.com/apps/expensify-mario/settings
 
 #Git Commands
 
