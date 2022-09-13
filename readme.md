@@ -1,5 +1,5 @@
 LINK TO THE WEBSITE
-https://dashboard.heroku.com/apps/expensify-mario/settings
+https://git.heroku.com/expensify-mario.git
 
 #Git Commands
 
